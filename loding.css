@@ -1,0 +1,96 @@
+.nav{
+    animation: translatein 0.75s;
+}
+@keyframes translatein {
+    from{
+        opacity: 0;
+        transform : translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform : translateY(0) ;
+        }
+}
+.main-content{
+
+    animation: translateleft 1s;
+}
+@keyframes translateleft {
+    from {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    
+}
+.main-image img{
+    animation: translateright 1s;
+}
+@keyframes  translateright
+    
+{
+   from{
+      filter: blur(3px);
+      transform: translateX(20px);
+   }
+   to{
+      filter: blur(0px);
+      transform: translateX(0);
+   }
+}
+.main-icons{
+    animation: translatedown 1s;
+}
+.contact-me{
+    animation: translateleft 1s;
+}
+@keyframes translatedown {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* animation for revealing content for reveal class */
+.reveal{
+    position: relative;
+    transform: translateY(85px);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.reveal-left{
+    position: relative;
+    transform: translateX(-55px);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.reveal-left.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.reveal-right {
+    position: relative;
+    transform: translateX(55px);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.reveal-right.active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+
